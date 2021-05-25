@@ -57,14 +57,3 @@ class Database:
 class Main:
     def __init__(self):
         database = Database()
-
-
-
-
-# read data한거를 DB에 update해줘야한다
-
-
-
-
-
-
