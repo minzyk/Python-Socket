@@ -1,25 +1,38 @@
+n = 13
+answer = 0
+sum = 0
 
-a=[]
-b=[]
-result = []
+for i in range(1, n+1):     # 1부터 14까지
+    if n % i == 0:          # 그 중 나눈 나머지가 0이 될 경우
+        sum += i            # i의 합을 구한다
+        answer = sum
 
-a = 3, 2, 1
-b = True, False, False
+print(answer)
 
-for i in zip(a, b):
-    if i[1] == False:
-        result.append(i[0] * -1)
-    else:
-        result.append(i[0] * 1)
-
-print(sum(result))
+# print(sum([i for i in range(1, n + 1) if n % i == 0]))     - 한 문장으로 줄이기 연습
 
 
-for i in range(3):
-    print(b[i])
-    if b[i] == False:
-        result.append(abs(a[i]) * -1)
-    else:
-        result.append(abs(a[i]) * 1)
 
-print(sum(result))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
