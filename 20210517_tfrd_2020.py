@@ -20,7 +20,6 @@ class Modbus:
         self.idx_table = list()
         self.idx_column = list()
 
-        # ===== 여기에서 밑의 클래스 데이터베이스부분에 값을 append해 줄거임 ===
         for i in range(len(self.tableIndex)):
             self.idx_table.append(self.conv_table_index)
         # END
@@ -58,23 +57,3 @@ class Database:
 class Main:
     def __init__(self):
         database = Database()
-
-
-
-"""모드버스 값을 불러올거임 이걸 db랑 연결
-
-1. 모드버스에서 가져온 값(프로토콜 설정)
-2. DB에 넣어주기
-3. DB에 있는 값을 PHP 웹 사이트에서 볼 수 있게 구현
-class Main: 만들어서 리스트 append 시킬 값들, 
- 
- """
-
-
-# read data한거를 DB에 update해줘야한다
-
-
-
-
-
-
